@@ -1,0 +1,14 @@
+@use './src/styles/abstracts' as *;
+
+.Bookmarks {
+  height: 100vh;
+  &__title {
+    margin: 0.5em 0;
+    padding: 0;
+    color: $primary-color;
+  }
+
+  &__list {
+    padding: 1.5em;
+  }
+}

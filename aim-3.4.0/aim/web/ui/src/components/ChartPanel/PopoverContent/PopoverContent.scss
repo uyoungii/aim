@@ -1,0 +1,80 @@
+@use "src/styles/abstracts" as *;
+
+.PopoverContent__container {
+  position: relative;
+  max-height: inherit;
+  font-size: $text-sm;
+  line-height: 15px;
+  color: $pico-80;
+  background-color: transparent;
+
+  .PopoverContent {
+    max-height: inherit;
+    overflow: auto;
+    padding-bottom: 3px;
+
+    &__box {
+      padding: 0.625rem 1rem;
+    }
+
+    &__valueContainer {
+      display: flex;
+      //align-items: center;
+      margin-top: 0.4rem;
+    }
+
+    &__valueContainer:first-child {
+      margin-top: 0;
+    }
+
+    &__value {
+      margin-top: 0.25rem;
+      word-break: break-word;
+    }
+
+    &__value:first-child {
+      margin-top: 0;
+    }
+
+    &__headerValue {
+      margin-left: 0.4rem;
+    }
+
+    &__axisValue {
+      margin-top: 0.125rem;
+      word-break: break-word;
+    }
+
+    &__contextValue {
+      margin-left: 0.5rem;
+      font-weight: 400;
+    }
+
+    &__runDetails {
+      display: flex;
+      align-items: center;
+
+      .icon-link {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+      }
+    }
+
+    &__subtitle1 {
+      color: $pico-50;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    &__subtitle2 {
+      font-weight: 600;
+      text-transform: capitalize;
+      color: $text-color;
+      margin-top: 8px;
+    }
+  }
+}

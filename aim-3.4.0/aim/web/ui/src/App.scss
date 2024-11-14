@@ -1,0 +1,14 @@
+@import 'src/styles/base/_reset.scss';
+@import 'src/styles/components/_autocomplete.scss';
+@import 'src/styles/components/_inputs.scss';
+@import 'src/styles/_global.scss';
+
+.mainContainer {
+  width: calc(100% - 75px);
+  height: 100%;
+}
+
+.pageContainer {
+  height: 100%;
+  display: flex;
+}

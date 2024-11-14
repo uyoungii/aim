@@ -1,0 +1,33 @@
+@use 'src/styles/abstracts' as *;
+.CodeBlock {
+  background: #f2f3f4;
+  border-radius: $border-radius-main;
+  padding: 1em 3em 1em 1em;
+  position: relative;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  pre {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $text-md;
+    line-height: 1.3125em;
+    color: #031123;
+  }
+  .prism-code {
+    background-color: transparent !important;
+  }
+  &__copy__span {
+    top: 1em;
+    right: 1em;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: $pico-80;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+}

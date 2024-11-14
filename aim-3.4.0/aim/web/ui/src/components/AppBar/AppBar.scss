@@ -1,0 +1,21 @@
+@use 'src/styles/abstracts' as *;
+
+.AppBar {
+  display: flex;
+  align-items: center;
+  min-height: 2.3rem;
+  border-bottom: $border-separator;
+  border-left: $border-main;
+  border-right: $border-main;
+  padding-left: 1.5rem;
+  &__title {
+    flex: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+}

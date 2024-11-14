@@ -1,0 +1,50 @@
+@use "src/styles/abstracts" as *;
+
+.ResizePanel {
+  cursor: row-resize;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 0.5rem;
+  background-color: $primary-color-10;
+  transition: all 0.15s ease-out;
+  transition-delay: 0.3s;
+  i {
+    transition: all 0.15s ease-out;
+    transition-delay: 0.3s;
+  }
+  &:hover,
+  &.resizing {
+    background-color: $primary-color-50;
+    .ResizePanel__dots {
+      opacity: 0;
+    }
+  }
+  &__fullHeight {
+    background-color: $cuddle-10;
+    border-top: $border-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__dots {
+    display: flex;
+    transition: 0.18s ease-out;
+    transition-delay: 0.3s;
+    span {
+      width: 0.25rem;
+      height: 0.25rem;
+      background-color: $pico-70;
+      display: inline-block;
+      margin-right: 0.25rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
